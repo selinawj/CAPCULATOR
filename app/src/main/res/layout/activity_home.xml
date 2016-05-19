@@ -19,4 +19,15 @@
         android:layout_centerVertical="true"
         android:layout_centerHorizontal="true"
         android:background="#000000" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:id="@+id/addMod"
+        android:background="@drawable/addmod"
+        android:layout_above="@+id/textView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
 </RelativeLayout>
