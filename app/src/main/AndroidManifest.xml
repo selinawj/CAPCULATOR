@@ -22,7 +22,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Home"></activity>
+        <activity android:name=".Home" />
+        <activity android:name=".AddModule" />
+        <activity android:name=".ProgressChart" />
+        <activity android:name=".TargetSetting" />
+        <activity android:name=".ModuleList"></activity>
     </application>
 
 </manifest>
