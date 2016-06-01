@@ -8,7 +8,7 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="capture.capculator.Home"
-    android:background="#f1f1f1">
+    android:background="@drawable/palette6">
 
     <TextView
         android:layout_width="wrap_content"
@@ -16,9 +16,12 @@
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="DISPLAY CAP HERE"
         android:id="@+id/textView"
-        android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true"
-        android:background="#000000" />
+        android:background="#000000"
+        android:layout_alignBottom="@+id/addMod"
+        android:layout_toRightOf="@+id/addMod"
+        android:layout_toEndOf="@+id/addMod"
+        android:layout_marginLeft="29dp"
+        android:layout_marginStart="29dp" />
 
     <Button
         style="?android:attr/buttonStyleSmall"
@@ -26,8 +29,75 @@
         android:layout_height="80dp"
         android:id="@+id/addMod"
         android:background="@drawable/addmod"
-        android:layout_above="@+id/textView"
+        android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Module"
+        android:id="@+id/addModule"
+        android:layout_below="@+id/addMod"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="56dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Progress Chart"
+        android:id="@+id/progressChart"
+        android:layout_below="@+id/addModule"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/addModule"
+        android:layout_alignEnd="@+id/addModule" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Target Setting"
+        android:id="@+id/targetSetting"
+        android:layout_below="@+id/progressChart"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/progressChart"
+        android:layout_alignEnd="@+id/progressChart" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Module List"
+        android:id="@+id/moduleList"
+        android:layout_below="@+id/targetSetting"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/targetSetting"
+        android:layout_alignEnd="@+id/targetSetting" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Scenario List"
+        android:id="@+id/scenarioList"
+        android:layout_below="@+id/moduleList"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/moduleList"
+        android:layout_alignEnd="@+id/moduleList" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Exam Reminder"
+        android:id="@+id/examReminder"
+        android:layout_below="@+id/scenarioList"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/scenarioList"
+        android:layout_alignEnd="@+id/scenarioList" />
 
 </RelativeLayout>
