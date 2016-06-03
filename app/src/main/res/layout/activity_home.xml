@@ -21,66 +21,69 @@
     <ImageButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/imageButton"
+        android:id="@+id/bAddModule"
         android:layout_above="@+id/center"
         android:layout_toLeftOf="@+id/center"
         android:layout_marginRight="10dp"
-        android:layout_marginBottom="70dp"
-        android:src="@drawable/addModule"
+        android:layout_marginBottom="120dp"
+        android:src="@drawable/addmodule"
         android:background="@android:color/transparent" />
 
     <ImageButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/imageButton2"
+        android:id="@+id/bProgressChart"
         android:layout_above="@+id/center"
         android:layout_toRightOf="@+id/center"
         android:layout_marginLeft="10dp"
-        android:layout_marginBottom="70dp"
-        android:src="@drawable/progressChart"
+        android:layout_marginBottom="120dp"
+        android:src="@drawable/progresschart"
         android:background="@android:color/transparent" />
 
     <ImageButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/imageButton3"
+        android:id="@+id/bTargetSetting"
         android:layout_above="@+id/center"
         android:layout_toRightOf="@+id/center"
-        android:layout_marginLeft="80dp"
+        android:layout_marginLeft="70dp"
         android:layout_marginBottom="0dp"
-        android:src="@drawable/targetSetting"
+        android:src="@drawable/targetsetting"
         android:background="@android:color/transparent" />
 
     <ImageButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/imageButton4"
-        android:src="@drawable/moduleList"
-        android:background="@android:color/transparent"
+        android:id="@+id/bModuleList"
         android:layout_below="@+id/center"
-        android:layout_alignRight="@+id/imageButton2"
-        android:layout_alignEnd="@+id/imageButton2"
-        android:layout_marginTop="47dp" />
+        android:layout_toRightOf="@+id/center"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/modulelist"
+        android:background="@android:color/transparent"
+        />
 
     <ImageButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/imageButton5"
-        android:layout_alignBottom="@+id/imageButton4"
-        android:layout_alignRight="@+id/imageButton"
-        android:layout_alignEnd="@+id/imageButton"
-        android:src="@drawable/scenarioList"
+        android:id="@+id/bScenarioList"
+        android:layout_below="@+id/center"
+        android:layout_toLeftOf="@+id/center"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/scenariolist"
         android:background="@android:color/transparent" />
 
     <ImageButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/imageButton6"
-        android:src="@drawable/examReminder"
-        android:background="@android:color/transparent"
-        android:layout_alignBottom="@+id/center"
-        android:layout_toLeftOf="@+id/imageButton5"
-        android:layout_toStartOf="@+id/imageButton5" />
+        android:id="@+id/bExamReminder"
+        android:src="@drawable/examreminder"
+        android:layout_above="@+id/center"
+        android:layout_toLeftOf="@+id/center"
+        android:layout_marginRight="70dp"
+        android:layout_marginBottom="0dp"
+        android:background="@android:color/transparent" />
 
 
 </RelativeLayout>
