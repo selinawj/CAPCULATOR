@@ -25,5 +25,43 @@ public class Home extends AppCompatActivity {
 
             }
         });
+
+        final ImageButton bProgressChart = (ImageButton) findViewById(R.id.bProgressChart);
+
+        bProgressChart.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent progresschartIntent = new Intent(Home.this, ProgressChart.class);
+                Home.this.startActivity(progresschartIntent);
+
+            }
+        });
+
+        final ImageButton bTargetSetting = (ImageButton) findViewById(R.id.bTargetSetting);
+
+        bTargetSetting.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent targetsettingIntent = new Intent(Home.this, TargetSetting.class);
+                Home.this.startActivity(targetsettingIntent);
+
+            }
+        });
+
+        final ImageButton bModuleList = (ImageButton) findViewById(R.id.bModuleList);
+
+        bModuleList.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent modulelistIntent = new Intent(Home.this, ModuleList.class);
+                Home.this.startActivity(modulelistIntent);
+
+            }
+        });
+
+        final ImageButton bScenarioList = (ImageButton) findViewById(R.id.bScenarioList);
+
+        final ImageButton bExamReminder = (ImageButton) findViewById(R.id.bExamReminder);
+
     }
 }
