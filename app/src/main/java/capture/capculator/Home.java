@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 public class Home extends AppCompatActivity {
@@ -14,6 +15,8 @@ public class Home extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
+
+        final ImageView center = (ImageView) findViewById(R.id.center);
 
         final ImageButton bAddModule = (ImageButton) findViewById(R.id.bAddModule);
 

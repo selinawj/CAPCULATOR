@@ -3,8 +3,6 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/CAPCulator.iml" filepath="$PROJECT_DIR$/CAPCulator.iml" />
-      <module fileurl="file://$PROJECT_DIR$/CAPCulator.gitator.iml" filepath="$PROJECT_DIR$/CAPCulator.gitator.iml" />
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>
