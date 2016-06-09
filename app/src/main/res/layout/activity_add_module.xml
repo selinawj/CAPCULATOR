@@ -14,7 +14,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Add Semester"
-        android:id="@+id/addSemester"
+        android:id="@+id/bAddSemester"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
@@ -25,10 +25,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="CA Components"
-        android:id="@+id/caComponents"
-        android:layout_below="@+id/addSemester"
+        android:id="@+id/bCAComponents"
+        android:layout_below="@+id/bAddSemester"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_alignRight="@+id/addSemester"
-        android:layout_alignEnd="@+id/addSemester" />
+        android:layout_alignRight="@+id/bAddSemester"
+        android:layout_alignEnd="@+id/bAddSemester" />
 </RelativeLayout>
