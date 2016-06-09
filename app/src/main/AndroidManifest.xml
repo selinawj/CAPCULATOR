@@ -26,7 +26,8 @@
         <activity android:name=".ProgressChart" />
         <activity android:name=".TargetSetting" />
         <activity android:name=".ModuleList" />
-        <activity android:name=".CAComponents"></activity>
+        <activity android:name=".CAComponents" />
+        <activity android:name=".ScenarioList"></activity>
     </application>
 
 </manifest>

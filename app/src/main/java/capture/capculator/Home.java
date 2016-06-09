@@ -64,6 +64,15 @@ public class Home extends AppCompatActivity {
 
         final ImageButton bScenarioList = (ImageButton) findViewById(R.id.bScenarioList);
 
+        bScenarioList.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent scenariolistIntent = new Intent(Home.this, ScenarioList.class);
+                Home.this.startActivity(scenariolistIntent);
+
+            }
+        });
+
         final ImageButton bExamReminder = (ImageButton) findViewById(R.id.bExamReminder);
 
         final TextView tvAddModule = (TextView) findViewById(R.id.tvAddModule);
