@@ -29,6 +29,17 @@
         android:src="@drawable/addmodule"
         android:background="@android:color/transparent" />
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Add Module"
+        android:id="@+id/tvAddModule"
+        android:layout_above="@+id/center"
+        android:layout_toLeftOf="@+id/center"
+        android:layout_marginRight="24dp"
+        android:layout_marginBottom="105dp" />
+
     <ImageButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -39,6 +50,17 @@
         android:layout_marginBottom="120dp"
         android:src="@drawable/progresschart"
         android:background="@android:color/transparent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Progress Chart"
+        android:id="@+id/tvProgressChart"
+        android:layout_above="@+id/center"
+        android:layout_toRightOf="@+id/center"
+        android:layout_marginLeft="15dp"
+        android:layout_marginBottom="105dp" />
 
     <ImageButton
         android:layout_width="wrap_content"
@@ -51,6 +73,17 @@
         android:src="@drawable/targetsetting"
         android:background="@android:color/transparent" />
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Target Setting"
+        android:id="@+id/tvTargetSetting"
+        android:layout_above="@+id/center"
+        android:layout_toRightOf="@+id/center"
+        android:layout_marginLeft="75dp"
+        android:layout_marginBottom="-20dp" />
+
     <ImageButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -60,8 +93,18 @@
         android:layout_marginLeft="10dp"
         android:layout_marginTop="30dp"
         android:src="@drawable/modulelist"
-        android:background="@android:color/transparent"
-        />
+        android:background="@android:color/transparent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Module List"
+        android:id="@+id/tvModuleList"
+        android:layout_below="@+id/center"
+        android:layout_toRightOf="@+id/center"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="135dp" />
 
     <ImageButton
         android:layout_width="wrap_content"
@@ -74,6 +117,17 @@
         android:src="@drawable/scenariolist"
         android:background="@android:color/transparent" />
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Scenario List"
+        android:id="@+id/tvScenarioList"
+        android:layout_below="@+id/center"
+        android:layout_toLeftOf="@+id/center"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="135dp" />
+
     <ImageButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -84,6 +138,17 @@
         android:layout_marginRight="70dp"
         android:layout_marginBottom="0dp"
         android:background="@android:color/transparent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Exam Reminder"
+        android:id="@+id/tvExamReminder"
+        android:layout_above="@+id/center"
+        android:layout_toLeftOf="@+id/center"
+        android:layout_marginRight="70dp"
+        android:layout_marginBottom="-20dp" />
 
 
 </RelativeLayout>

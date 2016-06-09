@@ -66,5 +66,12 @@ public class Home extends AppCompatActivity {
 
         final ImageButton bExamReminder = (ImageButton) findViewById(R.id.bExamReminder);
 
+        final TextView tvAddModule = (TextView) findViewById(R.id.tvAddModule);
+        final TextView tvProgressChart = (TextView) findViewById(R.id.tvProgressChart);
+        final TextView tvTargetSetting = (TextView) findViewById(R.id.tvTargetSetting);
+        final TextView tvModuleList = (TextView) findViewById(R.id.tvModuleList);
+        final TextView tvScenarioList = (TextView) findViewById(R.id.tvScenarioList);
+        final TextView tvExamReminder = (TextView) findViewById(R.id.tvExamReminder);
+
     }
 }
