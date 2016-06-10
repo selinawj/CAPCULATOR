@@ -78,8 +78,8 @@ public class Home extends AppCompatActivity {
         bExamReminder.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent scenariolistIntent = new Intent(Home.this, ExamReminder.class);
-                Home.this.startActivity(scenariolistIntent);
+                Intent examReminderIntent = new Intent(Home.this, ExamReminder.class);
+                Home.this.startActivity(examReminderIntent);
 
             }
         });
