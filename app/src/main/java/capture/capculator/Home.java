@@ -75,7 +75,7 @@ public class Home extends AppCompatActivity {
 
         final ImageButton bExamReminder = (ImageButton) findViewById(R.id.bExamReminder);
 
-        bScenarioList.setOnClickListener(new View.OnClickListener() {
+        bExamReminder.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent scenariolistIntent = new Intent(Home.this, ExamReminder.class);
