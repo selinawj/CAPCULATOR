@@ -75,6 +75,16 @@ public class Home extends AppCompatActivity {
 
         final ImageButton bExamReminder = (ImageButton) findViewById(R.id.bExamReminder);
 
+        bScenarioList.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent scenariolistIntent = new Intent(Home.this, ExamReminder.class);
+                Home.this.startActivity(scenariolistIntent);
+
+            }
+        });
+
+
         final TextView tvAddModule = (TextView) findViewById(R.id.tvAddModule);
         final TextView tvProgressChart = (TextView) findViewById(R.id.tvProgressChart);
         final TextView tvTargetSetting = (TextView) findViewById(R.id.tvTargetSetting);
