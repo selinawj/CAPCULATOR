@@ -16,6 +16,15 @@ public class AddModule extends AppCompatActivity {
 
         final Button bAddSemester = (Button) findViewById(R.id.bAddSemester);
 
+        bAddSemester.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent addsemesterIntent = new Intent(AddModule.this, AddSemester.class);
+                AddModule.this.startActivity(addsemesterIntent);
+
+            }
+        });
+
 
     }
 }

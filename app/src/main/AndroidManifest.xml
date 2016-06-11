@@ -30,7 +30,8 @@
         <activity android:name=".CAComponents" />
         <activity android:name=".ScenarioList" />
         <activity android:name=".ExamReminder" />
-        <activity android:name=".ScenarioInfo"></activity>
+        <activity android:name=".ScenarioInfo" />
+        <activity android:name=".AddSemester"></activity>
     </application>
 
 </manifest>
