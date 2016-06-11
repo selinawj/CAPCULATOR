@@ -3,6 +3,8 @@ package capture.capculator;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
@@ -93,4 +95,5 @@ public class Home extends AppCompatActivity {
         final TextView tvExamReminder = (TextView) findViewById(R.id.tvExamReminder);
 
     }
+
 }

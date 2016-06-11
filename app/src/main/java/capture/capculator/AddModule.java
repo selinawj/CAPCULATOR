@@ -16,17 +16,6 @@ public class AddModule extends AppCompatActivity {
 
         final Button bAddSemester = (Button) findViewById(R.id.bAddSemester);
 
-        final Button bCAComponents = (Button) findViewById(R.id.bCAComponents);
-
-        bCAComponents.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent cacomponentsIntent = new Intent(AddModule.this, CAComponents.class);
-                AddModule.this.startActivity(cacomponentsIntent);
-
-            }
-        });
-
 
     }
 }
