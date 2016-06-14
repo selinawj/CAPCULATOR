@@ -40,7 +40,7 @@
                 android:visibility="visible">
 
                 <EditText
-                    android:id="@+id/Code1"
+                    android:id="@+id/etCode1"
                     android:layout_width="0dp"
                     android:layout_weight="10"
                     android:layout_height="wrap_content"
@@ -48,7 +48,7 @@
                     android:hint="Module"/>
 
                 <EditText
-                    android:id="@+id/MC1"
+                    android:id="@+id/etMC1"
                     android:layout_width="0dp"
                     android:layout_weight="10"
                     android:layout_height="wrap_content"
@@ -56,7 +56,7 @@
                     android:hint="MC"/>
 
                 <EditText
-                    android:id="@+id/Grade1"
+                    android:id="@+id/etGrade1"
                     android:layout_width="0dp"
                     android:layout_weight="10"
                     android:layout_height="wrap_content"
@@ -71,7 +71,7 @@
                 android:visibility="invisible">
 
                 <EditText
-                    android:id="@+id/Code2"
+                    android:id="@+id/etCode2"
                     android:layout_width="0dp"
                     android:layout_weight="10"
                     android:layout_height="wrap_content"
@@ -79,7 +79,7 @@
                     android:hint="Module"/>
 
                 <EditText
-                    android:id="@+id/MC2"
+                    android:id="@+id/etMC2"
                     android:layout_width="0dp"
                     android:layout_weight="10"
                     android:layout_height="wrap_content"
@@ -87,7 +87,7 @@
                     android:hint="MC"/>
 
                 <EditText
-                    android:id="@+id/Grade2"
+                    android:id="@+id/etGrade2"
                     android:layout_width="0dp"
                     android:layout_weight="10"
                     android:layout_height="wrap_content"
@@ -102,7 +102,7 @@
                 android:visibility="invisible">
 
                 <EditText
-                    android:id="@+id/Code3"
+                    android:id="@+id/etCode3"
                     android:layout_width="0dp"
                     android:layout_weight="10"
                     android:layout_height="wrap_content"
@@ -110,7 +110,7 @@
                     android:hint="Module"/>
 
                 <EditText
-                    android:id="@+id/MC3"
+                    android:id="@+id/etMC3"
                     android:layout_width="0dp"
                     android:layout_weight="10"
                     android:layout_height="wrap_content"
@@ -118,7 +118,7 @@
                     android:hint="MC"/>
 
                 <EditText
-                    android:id="@+id/Grade3"
+                    android:id="@+id/etGrade3"
                     android:layout_width="0dp"
                     android:layout_weight="10"
                     android:layout_height="wrap_content"
@@ -133,7 +133,7 @@
                 android:visibility="invisible">
 
                 <EditText
-                    android:id="@+id/Code4"
+                    android:id="@+id/etCode4"
                     android:layout_width="0dp"
                     android:layout_weight="10"
                     android:layout_height="wrap_content"
@@ -141,7 +141,7 @@
                     android:hint="Module"/>
 
                 <EditText
-                    android:id="@+id/MC4"
+                    android:id="@+id/etMC4"
                     android:layout_width="0dp"
                     android:layout_weight="10"
                     android:layout_height="wrap_content"
@@ -149,7 +149,7 @@
                     android:hint="MC"/>
 
                 <EditText
-                    android:id="@+id/Grade4"
+                    android:id="@+id/etGrade4"
                     android:layout_width="0dp"
                     android:layout_weight="10"
                     android:layout_height="wrap_content"
@@ -164,7 +164,7 @@
                 android:visibility="invisible">
 
                 <EditText
-                    android:id="@+id/Code5"
+                    android:id="@+id/etCode5"
                     android:layout_width="0dp"
                     android:layout_weight="10"
                     android:layout_height="wrap_content"
@@ -172,7 +172,7 @@
                     android:hint="Module"/>
 
                 <EditText
-                    android:id="@+id/MC5"
+                    android:id="@+id/etMC5"
                     android:layout_width="0dp"
                     android:layout_weight="10"
                     android:layout_height="wrap_content"
@@ -180,7 +180,7 @@
                     android:hint="MC"/>
 
                 <EditText
-                    android:id="@+id/Grade5"
+                    android:id="@+id/etGrade5"
                     android:layout_width="0dp"
                     android:layout_weight="10"
                     android:layout_height="wrap_content"
@@ -195,7 +195,7 @@
                 android:visibility="invisible">
 
                 <EditText
-                    android:id="@+id/Code6"
+                    android:id="@+id/etCode6"
                     android:layout_width="0dp"
                     android:layout_weight="10"
                     android:layout_height="wrap_content"
@@ -203,7 +203,7 @@
                     android:hint="Module"/>
 
                 <EditText
-                    android:id="@+id/MC6"
+                    android:id="@+id/etMC6"
                     android:layout_width="0dp"
                     android:layout_weight="10"
                     android:layout_height="wrap_content"
@@ -211,7 +211,7 @@
                     android:hint="MC"/>
 
                 <EditText
-                    android:id="@+id/Grade6"
+                    android:id="@+id/etGrade6"
                     android:layout_width="0dp"
                     android:layout_weight="10"
                     android:layout_height="wrap_content"
@@ -226,7 +226,7 @@
                 android:visibility="invisible">
 
                 <EditText
-                    android:id="@+id/Code7"
+                    android:id="@+id/etCode7"
                     android:layout_width="0dp"
                     android:layout_weight="10"
                     android:layout_height="wrap_content"
@@ -234,7 +234,7 @@
                     android:hint="Module"/>
 
                 <EditText
-                    android:id="@+id/MC7"
+                    android:id="@+id/etMC7"
                     android:layout_width="0dp"
                     android:layout_weight="10"
                     android:layout_height="wrap_content"
@@ -242,7 +242,7 @@
                     android:hint="MC"/>
 
                 <EditText
-                    android:id="@+id/Grade7"
+                    android:id="@+id/etGrade7"
                     android:layout_width="0dp"
                     android:layout_weight="10"
                     android:layout_height="wrap_content"
@@ -257,7 +257,7 @@
                 android:visibility="invisible">
 
                 <EditText
-                    android:id="@+id/Code8"
+                    android:id="@+id/etCode8"
                     android:layout_width="0dp"
                     android:layout_weight="10"
                     android:layout_height="wrap_content"
@@ -265,7 +265,7 @@
                     android:hint="Module"/>
 
                 <EditText
-                    android:id="@+id/MC8"
+                    android:id="@+id/etMC8"
                     android:layout_width="0dp"
                     android:layout_weight="10"
                     android:layout_height="wrap_content"
@@ -273,7 +273,7 @@
                     android:hint="MC"/>
 
                 <EditText
-                    android:id="@+id/Grade8"
+                    android:id="@+id/etGrade8"
                     android:layout_width="0dp"
                     android:layout_weight="10"
                     android:layout_height="wrap_content"
