@@ -10,4 +10,44 @@
     tools:context="capture.capculator.ScenarioInfo"
     android:background="@drawable/scenarioinfo">
 
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/etModule"
+        android:layout_marginTop="184dp"
+        android:hint="                          "
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText"
+        android:hint="                        "
+        android:layout_marginLeft="41dp"
+        android:layout_marginStart="41dp"
+        android:layout_alignBottom="@+id/etMCs"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="37dp" />
+
+    <NumberPicker
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/etMCs"
+        android:layout_marginTop="65dp"
+        android:layout_below="@+id/etModule"
+        android:layout_toRightOf="@+id/etModule"
+        android:layout_toEndOf="@+id/etModule" />
+
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btSU"
+        android:checked="false"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/editText"
+        android:layout_toEndOf="@+id/editText"
+        android:layout_below="@+id/etMCs" />
+
 </RelativeLayout>
