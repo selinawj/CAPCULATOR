@@ -26,8 +26,6 @@ public class ScenarioList extends AppCompatActivity{
             }
         });
 
-        final TextView tvAddScenario = (TextView) findViewById(R.id.tvAddScenario);
-
     }
 
 }
