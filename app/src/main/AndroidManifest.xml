@@ -31,7 +31,8 @@
         <activity android:name=".ScenarioList" />
         <activity android:name=".ExamReminder" />
         <activity android:name=".ScenarioInfo" />
-        <activity android:name=".AddSemester"></activity>
+        <activity android:name=".AddSemester" />
+        <activity android:name=".CurrentScenario"></activity>
     </application>
 
 </manifest>

@@ -14,7 +14,7 @@ public class ScenarioList extends AppCompatActivity{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_scenario_list);
 
-        /*this is to link buttons to another Activity*/
+        /*this is to link buttons to ScenarioInfo*/
         final ImageButton bAddScenario = (ImageButton) findViewById(R.id.bAddScenario);
 
         bAddScenario.setOnClickListener(new View.OnClickListener() {
@@ -26,6 +26,17 @@ public class ScenarioList extends AppCompatActivity{
             }
         });
 
+        /*this is to link buttons to CurrentScenario*/
+        final ImageButton bCurrentScenario = (ImageButton) findViewById(R.id.bCurrentScenario);
+
+        bCurrentScenario.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent currentScenario = new Intent(ScenarioList.this, CurrentScenario.class);
+                ScenarioList.this.startActivity(currentScenario);
+
+            }
+        });
     }
 
 }

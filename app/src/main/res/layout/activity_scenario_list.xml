@@ -21,4 +21,14 @@
         android:layout_centerHorizontal="true"
         android:background="@android:color/transparent" />
 
+    <ImageButton
+        android:layout_width="125dip"
+        android:layout_height="125dip"
+        android:id="@+id/bCurrentScenario"
+        android:clickable="true"
+        android:contextClickable="false"
+        android:onClick="buttonOnClick"
+        android:background="@android:color/transparent"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
 </RelativeLayout>
