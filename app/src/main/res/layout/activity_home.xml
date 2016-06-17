@@ -8,7 +8,7 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="capture.capculator.Home"
-    android:background="@drawable/lightblue">
+    android:background="@drawable/homebg">
 
     <ImageView
         android:id="@+id/center"
@@ -22,12 +22,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/bAddModule"
-        android:layout_above="@+id/center"
-        android:layout_toLeftOf="@+id/center"
-        android:layout_marginRight="10dp"
-        android:layout_marginBottom="120dp"
         android:src="@drawable/addmodule"
-        android:background="@android:color/transparent" />
+        android:background="@android:color/transparent"
+        android:layout_below="@+id/tvProgressChart"
+        android:layout_toLeftOf="@+id/center"
+        android:layout_toStartOf="@+id/center" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -35,21 +34,19 @@
         android:textAppearance="?android:attr/textAppearanceSmall"
         android:text="Add Module"
         android:id="@+id/tvAddModule"
-        android:layout_above="@+id/center"
-        android:layout_toLeftOf="@+id/center"
-        android:layout_marginRight="24dp"
-        android:layout_marginBottom="105dp" />
+        android:layout_above="@+id/bAddModule"
+        android:layout_alignLeft="@+id/bAddModule"
+        android:layout_alignStart="@+id/bAddModule" />
 
     <ImageButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/bProgressChart"
-        android:layout_above="@+id/center"
-        android:layout_toRightOf="@+id/center"
-        android:layout_marginLeft="10dp"
-        android:layout_marginBottom="120dp"
         android:src="@drawable/progresschart"
-        android:background="@android:color/transparent" />
+        android:background="@android:color/transparent"
+        android:layout_above="@+id/bTargetSetting"
+        android:layout_alignLeft="@+id/tvProgressChart"
+        android:layout_alignStart="@+id/tvProgressChart" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -57,21 +54,19 @@
         android:textAppearance="?android:attr/textAppearanceSmall"
         android:text="Progress Chart"
         android:id="@+id/tvProgressChart"
-        android:layout_above="@+id/center"
-        android:layout_toRightOf="@+id/center"
-        android:layout_marginLeft="15dp"
-        android:layout_marginBottom="105dp" />
+        android:layout_above="@+id/bProgressChart"
+        android:layout_alignLeft="@+id/tvModuleList"
+        android:layout_alignStart="@+id/tvModuleList" />
 
     <ImageButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/bTargetSetting"
-        android:layout_above="@+id/center"
-        android:layout_toRightOf="@+id/center"
-        android:layout_marginLeft="70dp"
-        android:layout_marginBottom="0dp"
         android:src="@drawable/targetsetting"
-        android:background="@android:color/transparent" />
+        android:background="@android:color/transparent"
+        android:layout_centerVertical="true"
+        android:layout_alignRight="@+id/tvTargetSetting"
+        android:layout_alignEnd="@+id/tvTargetSetting" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -79,21 +74,19 @@
         android:textAppearance="?android:attr/textAppearanceSmall"
         android:text="Target Setting"
         android:id="@+id/tvTargetSetting"
-        android:layout_above="@+id/center"
-        android:layout_toRightOf="@+id/center"
-        android:layout_marginLeft="75dp"
-        android:layout_marginBottom="-20dp" />
+        android:layout_below="@+id/bTargetSetting"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
 
     <ImageButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/bModuleList"
-        android:layout_below="@+id/center"
-        android:layout_toRightOf="@+id/center"
-        android:layout_marginLeft="10dp"
-        android:layout_marginTop="30dp"
         android:src="@drawable/modulelist"
-        android:background="@android:color/transparent" />
+        android:background="@android:color/transparent"
+        android:layout_alignTop="@+id/bScenarioList"
+        android:layout_alignRight="@+id/bProgressChart"
+        android:layout_alignEnd="@+id/bProgressChart" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -101,21 +94,19 @@
         android:textAppearance="?android:attr/textAppearanceSmall"
         android:text="Module List"
         android:id="@+id/tvModuleList"
-        android:layout_below="@+id/center"
-        android:layout_toRightOf="@+id/center"
-        android:layout_marginLeft="25dp"
-        android:layout_marginTop="135dp" />
+        android:layout_below="@+id/bModuleList"
+        android:layout_toLeftOf="@+id/tvTargetSetting"
+        android:layout_toStartOf="@+id/tvTargetSetting" />
 
     <ImageButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/bScenarioList"
-        android:layout_below="@+id/center"
-        android:layout_toLeftOf="@+id/center"
-        android:layout_marginLeft="10dp"
-        android:layout_marginTop="30dp"
         android:src="@drawable/scenariolist"
-        android:background="@android:color/transparent" />
+        android:background="@android:color/transparent"
+        android:layout_below="@+id/tvExamReminder"
+        android:layout_toLeftOf="@+id/center"
+        android:layout_toStartOf="@+id/center" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -123,21 +114,19 @@
         android:textAppearance="?android:attr/textAppearanceSmall"
         android:text="Scenario List"
         android:id="@+id/tvScenarioList"
-        android:layout_below="@+id/center"
+        android:layout_below="@+id/bScenarioList"
         android:layout_toLeftOf="@+id/center"
-        android:layout_marginLeft="30dp"
-        android:layout_marginTop="135dp" />
+        android:layout_toStartOf="@+id/center" />
 
     <ImageButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/bExamReminder"
         android:src="@drawable/examreminder"
-        android:layout_above="@+id/center"
-        android:layout_toLeftOf="@+id/center"
-        android:layout_marginRight="70dp"
-        android:layout_marginBottom="0dp"
-        android:background="@android:color/transparent" />
+        android:background="@android:color/transparent"
+        android:layout_above="@+id/tvExamReminder"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -145,10 +134,9 @@
         android:textAppearance="?android:attr/textAppearanceSmall"
         android:text="Exam Reminder"
         android:id="@+id/tvExamReminder"
-        android:layout_above="@+id/center"
-        android:layout_toLeftOf="@+id/center"
-        android:layout_marginRight="70dp"
-        android:layout_marginBottom="-20dp" />
+        android:layout_below="@+id/bTargetSetting"
+        android:layout_alignRight="@+id/bExamReminder"
+        android:layout_alignEnd="@+id/bExamReminder" />
 
 
 </RelativeLayout>
