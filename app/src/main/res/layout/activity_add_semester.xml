@@ -8,284 +8,53 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="capture.capculator.AddSemester"
-    android:background="@drawable/bgcolor">
+    android:background="@drawable/addmod">
+
+    <Button
+        android:layout_width="280dip"
+        android:layout_height="50dip"
+        android:text="Add Module"
+        android:id="@+id/bAddModule"
+        android:onClick="bAddModule"
+        android:visibility="visible"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="42dp" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Add Module"
-        android:id="@+id/bAddModule"
+        android:text="NEXT"
+        android:id="@+id/next"
         android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:onClick="bAddModule"
-        android:visibility="visible"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true" />
 
-    <ScrollView
-        android:layout_width="match_parent"
+    <EditText
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/GradeScroll"
-        android:fillViewport="true"
-        android:layout_below="@id/bAddModule">
+        android:id="@+id/etCode1"
+        android:hint="MODULE CODE"
+        android:layout_marginTop="75dp"
+        android:layout_below="@+id/next"
+        android:layout_centerHorizontal="true" />
 
-        <TableLayout
-            android:layout_width="match_parent"
-            android:layout_height="fill_parent"
-            android:id="@+id/GradeTable">
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/etMC1"
+        android:hint="MC"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
 
-            <TableRow
-                android:id="@+id/Module1"
-                android:visibility="visible">
-
-                <EditText
-                    android:id="@+id/etCode1"
-                    android:layout_width="0dp"
-                    android:layout_weight="10"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="10dp"
-                    android:hint="Module"/>
-
-                <EditText
-                    android:id="@+id/etMC1"
-                    android:layout_width="0dp"
-                    android:layout_weight="10"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="10dp"
-                    android:hint="MC"/>
-
-                <EditText
-                    android:id="@+id/etGrade1"
-                    android:layout_width="0dp"
-                    android:layout_weight="10"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginRight="10dp"
-                    android:hint="Grade"/>
-
-            </TableRow>
-
-            <TableRow
-                android:id="@+id/Module2"
-                android:visibility="invisible">
-
-                <EditText
-                    android:id="@+id/etCode2"
-                    android:layout_width="0dp"
-                    android:layout_weight="10"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="10dp"
-                    android:hint="Module"/>
-
-                <EditText
-                    android:id="@+id/etMC2"
-                    android:layout_width="0dp"
-                    android:layout_weight="10"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="10dp"
-                    android:hint="MC"/>
-
-                <EditText
-                    android:id="@+id/etGrade2"
-                    android:layout_width="0dp"
-                    android:layout_weight="10"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginRight="10dp"
-                    android:hint="Grade"/>
-
-            </TableRow>
-
-            <TableRow
-                android:id="@+id/Module3"
-                android:visibility="invisible">
-
-                <EditText
-                    android:id="@+id/etCode3"
-                    android:layout_width="0dp"
-                    android:layout_weight="10"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="10dp"
-                    android:hint="Module"/>
-
-                <EditText
-                    android:id="@+id/etMC3"
-                    android:layout_width="0dp"
-                    android:layout_weight="10"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="10dp"
-                    android:hint="MC"/>
-
-                <EditText
-                    android:id="@+id/etGrade3"
-                    android:layout_width="0dp"
-                    android:layout_weight="10"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginRight="10dp"
-                    android:hint="Grade"/>
-
-            </TableRow>
-
-            <TableRow
-                android:id="@+id/Module4"
-                android:visibility="invisible">
-
-                <EditText
-                    android:id="@+id/etCode4"
-                    android:layout_width="0dp"
-                    android:layout_weight="10"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="10dp"
-                    android:hint="Module"/>
-
-                <EditText
-                    android:id="@+id/etMC4"
-                    android:layout_width="0dp"
-                    android:layout_weight="10"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="10dp"
-                    android:hint="MC"/>
-
-                <EditText
-                    android:id="@+id/etGrade4"
-                    android:layout_width="0dp"
-                    android:layout_weight="10"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginRight="10dp"
-                    android:hint="Grade"/>
-
-            </TableRow>
-
-            <TableRow
-                android:id="@+id/Module5"
-                android:visibility="invisible">
-
-                <EditText
-                    android:id="@+id/etCode5"
-                    android:layout_width="0dp"
-                    android:layout_weight="10"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="10dp"
-                    android:hint="Module"/>
-
-                <EditText
-                    android:id="@+id/etMC5"
-                    android:layout_width="0dp"
-                    android:layout_weight="10"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="10dp"
-                    android:hint="MC"/>
-
-                <EditText
-                    android:id="@+id/etGrade5"
-                    android:layout_width="0dp"
-                    android:layout_weight="10"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginRight="10dp"
-                    android:hint="Grade"/>
-
-            </TableRow>
-
-            <TableRow
-                android:id="@+id/Module6"
-                android:visibility="invisible">
-
-                <EditText
-                    android:id="@+id/etCode6"
-                    android:layout_width="0dp"
-                    android:layout_weight="10"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="10dp"
-                    android:hint="Module"/>
-
-                <EditText
-                    android:id="@+id/etMC6"
-                    android:layout_width="0dp"
-                    android:layout_weight="10"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="10dp"
-                    android:hint="MC"/>
-
-                <EditText
-                    android:id="@+id/etGrade6"
-                    android:layout_width="0dp"
-                    android:layout_weight="10"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginRight="10dp"
-                    android:hint="Grade"/>
-
-            </TableRow>
-
-            <TableRow
-                android:id="@+id/Module7"
-                android:visibility="invisible">
-
-                <EditText
-                    android:id="@+id/etCode7"
-                    android:layout_width="0dp"
-                    android:layout_weight="10"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="10dp"
-                    android:hint="Module"/>
-
-                <EditText
-                    android:id="@+id/etMC7"
-                    android:layout_width="0dp"
-                    android:layout_weight="10"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="10dp"
-                    android:hint="MC"/>
-
-                <EditText
-                    android:id="@+id/etGrade7"
-                    android:layout_width="0dp"
-                    android:layout_weight="10"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginRight="10dp"
-                    android:hint="Grade"/>
-
-            </TableRow>
-
-            <TableRow
-                android:id="@+id/Module8"
-                android:visibility="invisible">
-
-                <EditText
-                    android:id="@+id/etCode8"
-                    android:layout_width="0dp"
-                    android:layout_weight="10"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="10dp"
-                    android:hint="Module"/>
-
-                <EditText
-                    android:id="@+id/etMC8"
-                    android:layout_width="0dp"
-                    android:layout_weight="10"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="10dp"
-                    android:hint="MC"/>
-
-                <EditText
-                    android:id="@+id/etGrade8"
-                    android:layout_width="0dp"
-                    android:layout_weight="10"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginRight="10dp"
-                    android:hint="Grade"/>
-
-            </TableRow>
-
-        </TableLayout>
-
-    </ScrollView>
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/etGrade1"
+        android:hint="GRADE"
+        android:layout_above="@+id/bAddModule"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="52dp" />
 
 
 
