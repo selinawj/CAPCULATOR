@@ -26,7 +26,6 @@
         <activity android:name=".AddModule" />
         <activity android:name=".ProgressChart" />
         <activity android:name=".TargetSetting" />
-        <activity android:name=".ModuleList" />
         <activity android:name=".CAComponents" />
         <activity android:name=".ScenarioList" />
         <activity android:name=".ExamReminder" />

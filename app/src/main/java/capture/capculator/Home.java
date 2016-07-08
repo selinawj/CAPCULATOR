@@ -75,7 +75,7 @@ public class Home extends AppCompatActivity {
         bModuleList.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent modulelistIntent = new Intent(Home.this, ModuleList.class);
+                Intent modulelistIntent = new Intent(Home.this, MyModules.class);
                 Home.this.startActivity(modulelistIntent);
 
             }
