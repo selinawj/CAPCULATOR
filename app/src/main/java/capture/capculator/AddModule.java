@@ -13,6 +13,9 @@ import android.widget.ImageButton;
 import android.widget.ListView;
 import android.widget.Toast;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class AddModule extends ListActivity {
 
     ListView semesters;
@@ -23,35 +26,29 @@ public class AddModule extends ListActivity {
         setContentView(R.layout.activity_add_module);
 
         /*setting a list of semesters by default*/
-        String[] sem = {"Year 1 Semester 1", "Year 1 Semester 2", "Year 2 Semester 1", "Year 2 Semester 2", "Year 3 Semester 1", "Year 3 Semester 2", "Year 4 Semester 1", "Year 4 Semester 2", "Year 5 Semester 1", "Year 5 Semester 2"};
+        String[] sem = {"YEAR 1 SEMESTER 1", "YEAR 1 SEMESTER 2", "YEAR 2 SEMESTER 1", "YEAR 2 SEMESTER 2", "YEAR 3 SEMESTER 1", "YEAR 3 SEMESTER 2", "YEAR 4 SEMESTER 1", "YEAR 4 SEMESTER 2"};
         ArrayAdapter<String> adapter = new ArrayAdapter<>(getListView().getContext(), android.R.layout.simple_list_item_1, sem);
         getListView().setAdapter(adapter);
-
-        /*onClick function*/
         semesters = this.getListView();
         semesters.setItemsCanFocus(false);
-        semesters.setOnItemClickListener( new AdapterView.OnItemClickListener()
-        {
-            @Override
-            public void onItemClick(AdapterView<?> adapterView , View view , int position ,long arg3)
-            {
-                Intent intent = new Intent(AddModule.this, AddSemester.class);
-                startActivity(intent);
-            }
-        });
-
+        //onClickAction
+        semesters.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+                @Override
+                public void onItemClick(AdapterView<?> adapterView, View view, int position, long arg3) {
+                    Intent intent = new Intent(AddModule.this, AddSemester.class);
+                    startActivity(intent);
+                }
+            });
+        }
         /*link to addSemester*/
-        final Button bAddSemester = (Button) findViewById(R.id.bAddSemester);
+        //final Button bAddSemester = (Button) findViewById(R.id.bAddSemester);
 
-        bAddSemester.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent addsemesterIntent = new Intent(AddModule.this, AddSemester.class);
-                AddModule.this.startActivity(addsemesterIntent);
+        //bAddSemester.setOnClickListener(new View.OnClickListener() {
+        //@Override
+        //    public void onClick(View v) {
+        //        Intent addsemesterIntent = new Intent(AddModule.this, AddSemester.class);
+        //       AddModule.this.startActivity(addsemesterIntent);
 
-            }
-        });
-
-
-    }
+        //    }
+        //});
 }
