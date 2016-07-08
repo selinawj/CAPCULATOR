@@ -1,8 +1,11 @@
 package capture.capculator;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -10,13 +13,27 @@ import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
+
+import java.util.Map;
 
 public class Home extends AppCompatActivity {
+
+    public static final String DEFAULT="N/A";
+    TextView capView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
+
+        /*this is to load and calculate cap from sharedPreferences*/
+        capView = (TextView) findViewById(R.id.capView);
+        SharedPreferences sharedPreferences = getSharedPreferences("moduleInfo", Context.MODE_PRIVATE);
+        String module = sharedPreferences.getString("module",DEFAULT);
+        capView.setText(module);
+
+
 
         final ImageView center = (ImageView) findViewById(R.id.center);
 
@@ -95,5 +112,4 @@ public class Home extends AppCompatActivity {
         final TextView tvExamReminder = (TextView) findViewById(R.id.tvExamReminder);
 
     }
-
 }

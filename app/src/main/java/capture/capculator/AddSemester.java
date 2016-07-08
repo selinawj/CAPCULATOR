@@ -3,15 +3,21 @@ package capture.capculator;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.preference.PreferenceManager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class AddSemester extends AppCompatActivity {
+
+    private SharedPreferences preferenceSettings;
+    private SharedPreferences.Editor preferenceEditor;
+    private static final int PREFERENCE_MODE_PRIVATE = 0;
 
     EditText module;
     EditText MC;
@@ -36,17 +42,21 @@ public class AddSemester extends AppCompatActivity {
 
             }
         });
+
+
     }
 
+    /*this is to store modular info into ModuleInfo.xml on android sharedPreferences*/
     public void bAddModule(View view) {
-        SharedPreferences sharedPreferences = getSharedPreferences("ModuleInfo", Context.MODE_PRIVATE);
-        SharedPreferences.Editor editor = sharedPreferences.edit();
-        editor.putString("module", module.getText().toString());
-        editor.putString("MC", MC.getText().toString());
-        editor.putString("grade", grade.getText().toString());
 
-        editor.commit();
+        preferenceSettings = PreferenceManager.getDefaultSharedPreferences(getApplicationContext());
+        preferenceEditor = preferenceSettings.edit();
 
+        preferenceEditor.putString("module", module.getText().toString());
+        preferenceEditor.putString("MC", MC.getText().toString());
+        preferenceEditor.putString("grade", grade.getText().toString());
+
+        preferenceEditor.commit();
         Toast.makeText(this, "MODULE ADDED SUCCESSFULLY", Toast.LENGTH_LONG).show();
     }
 }
