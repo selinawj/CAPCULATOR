@@ -16,7 +16,9 @@
         android:layout_height="430dip"
         android:layout_above="@+id/bAddSemester"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"></ListView>
+        android:layout_alignParentStart="true"
+        android:focusable="false"
+        android:focusableInTouchMode="false"></ListView>
 
     <Button
         android:layout_width="wrap_content"
