@@ -89,6 +89,136 @@
             android:id="@+id/textView16" />
 
     </TableRow>
+    <TableRow
+        android:id="@+id/tableRow3"
+        android:layout_width="500dip"
+        android:layout_height="50dip"
+        android:isScrollContainer="true"
+        android:paddingRight="2dip"
+        android:layout_marginTop="120dp"
+        android:layout_below="@+id/tableRow1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MODULE3"
+            android:textSize="30dp"
+            android:layout_marginLeft="5dp"
+            android:id="@+id/textView17" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MC3"
+            android:textSize="30dp"
+            android:layout_marginLeft="90dp"
+            android:id="@+id/textView18" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="GRADE3"
+            android:textSize="30dp"
+            android:layout_marginLeft="90dp"
+            android:id="@+id/textView19" />
 
+    </TableRow>
+    <TableRow
+        android:id="@+id/tableRow4"
+        android:layout_width="500dip"
+        android:layout_height="50dip"
+        android:isScrollContainer="true"
+        android:paddingRight="2dip"
+        android:layout_marginTop="200dp"
+        android:layout_below="@+id/tableRow1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MODULE4"
+            android:textSize="30dp"
+            android:layout_marginLeft="5dp"
+            android:id="@+id/textView20" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MC4"
+            android:textSize="30dp"
+            android:layout_marginLeft="90dp"
+            android:id="@+id/textView21" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="GRADE4"
+            android:textSize="30dp"
+            android:layout_marginLeft="90dp"
+            android:id="@+id/textView22" />
 
+    </TableRow>
+    <TableRow
+        android:id="@+id/tableRow5"
+        android:layout_width="500dip"
+        android:layout_height="50dip"
+        android:isScrollContainer="true"
+        android:paddingRight="2dip"
+        android:layout_marginTop="280dp"
+        android:layout_below="@+id/tableRow1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MODULE5"
+            android:textSize="30dp"
+            android:layout_marginLeft="5dp"
+            android:id="@+id/textView23" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MC5"
+            android:textSize="30dp"
+            android:layout_marginLeft="90dp"
+            android:id="@+id/textView24" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="GRADE5"
+            android:textSize="30dp"
+            android:layout_marginLeft="90dp"
+            android:id="@+id/textView25" />
+
+    </TableRow>
+    <TableRow
+        android:id="@+id/tableRow6"
+        android:layout_width="500dip"
+        android:layout_height="50dip"
+        android:isScrollContainer="true"
+        android:paddingRight="2dip"
+        android:layout_marginTop="360dp"
+        android:layout_below="@+id/tableRow1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MODULE6"
+            android:textSize="30dp"
+            android:layout_marginLeft="5dp"
+            android:id="@+id/textView26" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MC6"
+            android:textSize="30dp"
+            android:layout_marginLeft="90dp"
+            android:id="@+id/textView27" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="GRADE6"
+            android:textSize="30dp"
+            android:layout_marginLeft="90dp"
+            android:id="@+id/textView28" />
+
+    </TableRow>
 </RelativeLayout>
