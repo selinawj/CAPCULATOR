@@ -3,6 +3,7 @@ package capture.capculator;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.preference.PreferenceManager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -19,21 +20,33 @@ import java.util.Map;
 
 public class Home extends AppCompatActivity {
 
-    public static final String DEFAULT="N/A";
-    TextView capView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
 
-        /*this is to load and calculate cap from sharedPreferences*/
-        capView = (TextView) findViewById(R.id.capView);
-        SharedPreferences sharedPreferences = getSharedPreferences("moduleInfo", Context.MODE_PRIVATE);
-        String module = sharedPreferences.getString("module",DEFAULT);
-        capView.setText(module);
-
-
+        /*loads CAP and displays it*/
+        SharedPreferences sharedPreferences = PreferenceManager.getDefaultSharedPreferences(getApplicationContext());
+        TextView capView = (TextView) findViewById(R.id.capView);
+        String cap = sharedPreferences.getString("grade", "missing");
+        switch(cap) {
+            case "A":
+                capView.setText("5.0");
+                break;
+            case "B":
+                capView.setText("4.0");
+                break;
+            case "C":
+                capView.setText("3.0");
+                break;
+            case "D":
+                capView.setText("2.0");
+                break;
+            case "E":
+                capView.setText("1.0");
+                break;
+        }
 
         final ImageView center = (ImageView) findViewById(R.id.center);
 
@@ -110,6 +123,8 @@ public class Home extends AppCompatActivity {
         final TextView tvModuleList = (TextView) findViewById(R.id.tvModuleList);
         final TextView tvScenarioList = (TextView) findViewById(R.id.tvScenarioList);
         final TextView tvExamReminder = (TextView) findViewById(R.id.tvExamReminder);
+
+
 
     }
 }
