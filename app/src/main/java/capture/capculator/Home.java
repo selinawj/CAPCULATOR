@@ -3,6 +3,7 @@ package capture.capculator;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.database.Cursor;
 import android.preference.PreferenceManager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -25,27 +26,36 @@ public class Home extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
+        final DBAdapter db=new DBAdapter(this);
 
         /*loads CAP and displays it*/
-        SharedPreferences sharedPreferences = PreferenceManager.getDefaultSharedPreferences(getApplicationContext());
         TextView capView = (TextView) findViewById(R.id.capView);
-        String cap = sharedPreferences.getString("grade", "missing");
-        switch(cap) {
-            case "A":
-                capView.setText("5.0");
-                break;
-            case "B":
-                capView.setText("4.0");
-                break;
-            case "C":
-                capView.setText("3.0");
-                break;
-            case "D":
-                capView.setText("2.0");
-                break;
-            case "E":
-                capView.setText("1.0");
-                break;
+        db.openDB();
+
+        //RETRIEVE
+        Cursor c=db.getAllNames();
+
+        while(c.moveToNext()) {
+            String cap = c.getString(3);
+
+
+            switch (cap) {
+                case "A":
+                    capView.setText("5.00");
+                    break;
+                case "B":
+                    capView.setText("4.00");
+                    break;
+                case "C":
+                    capView.setText("3.00");
+                    break;
+                case "D":
+                    capView.setText("2.00");
+                    break;
+                case "E":
+                    capView.setText("1.00");
+                    break;
+            }
         }
 
         final ImageView center = (ImageView) findViewById(R.id.center);

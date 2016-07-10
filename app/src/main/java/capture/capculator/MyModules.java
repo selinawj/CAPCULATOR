@@ -59,8 +59,14 @@ public class MyModules extends ListActivity {
         {
             String name=c.getString(1);
             String mc = c.getString(2);
-            players.add(name);
-            players.add(mc);
+            String grade = c.getString(3);
+            if (name.length() == 6) {
+                players.add(name + "                            " + mc + "                              " + grade);
+            } else if (name.length() < 6) {
+                players.add(name + "                                     " + mc + "                              " + grade);
+            } else {
+                players.add(name + "                            " + mc + "                              " + grade);
+            }
         }
 
         lv.setAdapter(adapter);
