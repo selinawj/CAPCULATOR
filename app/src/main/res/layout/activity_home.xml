@@ -145,7 +145,8 @@
         android:text="MY CAP"
         android:id="@+id/capView"
         android:layout_alignTop="@+id/center"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:textSize="40dp"/>
 
 
 </RelativeLayout>

@@ -8,46 +8,27 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="capture.capculator.ScenarioInfo"
-    android:background="@drawable/updatedscenariobg">
+    android:background="@drawable/currscenariosbg">
 
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/etModule"
-        android:layout_marginTop="77dp"
         android:hint="                          "
-        android:layout_below="@+id/bNext"
-        android:layout_centerHorizontal="true" />
-
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/editText"
-        android:hint="                        "
-        android:layout_marginLeft="34dp"
-        android:layout_marginStart="34dp"
-        android:layout_marginTop="61dp"
-        android:layout_below="@+id/etModule"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
-
-    <NumberPicker
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/etMCs"
-        android:layout_below="@+id/editText"
-        android:layout_toRightOf="@+id/etModule"
-        android:layout_toEndOf="@+id/etModule" />
+        android:layout_above="@+id/textView12"
+        android:layout_alignRight="@+id/bNext"
+        android:layout_alignEnd="@+id/bNext"
+        android:layout_marginBottom="73dp" />
 
     <Switch
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/btSU"
         android:checked="false"
-        android:layout_marginTop="61dp"
-        android:layout_below="@+id/etMCs"
-        android:layout_toRightOf="@+id/editText"
-        android:layout_toEndOf="@+id/editText" />
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/textView13"
+        android:layout_toEndOf="@+id/textView13"
+        android:layout_marginBottom="63dp" />
 
     <Button
         style="?android:attr/buttonStyleSmall"
@@ -56,6 +37,58 @@
         android:text="NEXT"
         android:id="@+id/bNext"
         android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="MODULE CODE"
+        android:id="@+id/textView11"
+        android:layout_alignBottom="@+id/etModule"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="MC"
+        android:id="@+id/textView12"
+        android:layout_marginLeft="48dp"
+        android:layout_marginStart="48dp"
+        android:layout_above="@+id/textView13"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="EXPECTED GRADE"
+        android:id="@+id/textView13"
+        android:textSize="18.5dp"
+        android:layout_below="@+id/etMC"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="47dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/etMC"
+        android:hint="                          "
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/etGrade"
+        android:hint="                          "
+        android:layout_alignBottom="@+id/textView13"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true" />
 

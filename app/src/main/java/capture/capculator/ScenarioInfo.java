@@ -10,17 +10,11 @@ import android.widget.NumberPicker;
 
 public class ScenarioInfo extends AppCompatActivity {
 
-    NumberPicker numPicker = null;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_scenario_info);
 
-        numPicker = (NumberPicker)findViewById(R.id.etMCs);
-        numPicker.setMaxValue(9);
-        numPicker.setMinValue(0);
-        numPicker.setWrapSelectorWheel(false);
 
         /*this is to link buttons to CurrentScenario*/
         final Button bNext = (Button) findViewById(R.id.bNext);
