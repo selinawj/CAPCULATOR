@@ -32,6 +32,9 @@ public class Home extends AppCompatActivity {
 
         //TODO: NEED TO CALL THE METHODS HERE
 
+        double finalGrade = calculatorFinal(grade, mc);
+        capView.setText(finalGrade);
+
 
         final ImageButton bTargetSetting = (ImageButton) findViewById(R.id.bTargetSetting);
 
@@ -293,11 +296,16 @@ public class Home extends AppCompatActivity {
 
         }
 
-        public void calculatorFinal(String grade, String mc) {
+        public double calculatorFinal(String grade, String mc) {
 
+            return calculatorNumerator(grade, mc)/calculatorDenominator(grade, mc);
+
+/*
             double finalCAP = calculatorNumerator(grade, mc)/calculatorDenominator(grade, mc);
 
             capView.setText(Double.toString(finalCAP));
+
+*/
 
         }
 
