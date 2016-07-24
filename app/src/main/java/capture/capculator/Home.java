@@ -28,13 +28,29 @@ public class Home extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
-        db.openDB();
 
         //TODO: NEED TO CALL THE METHODS HERE
 
+        db.openDB();
+
+
+        //RETRIEVE
+        Cursor c = db.getAllNames();
+
+
+        while (c.moveToNext()) {
+
+            String mc = c.getString(3);
+            String grade = c.getString(2);
+            double finalGrade = calculatorFinal(grade, mc);
+            capView.setText(Double.toString(finalGrade));
+
+        }
+
+/*
         double finalGrade = calculatorFinal(grade, mc);
         capView.setText(finalGrade);
-
+*/
 
         final ImageButton bTargetSetting = (ImageButton) findViewById(R.id.bTargetSetting);
 
@@ -120,56 +136,55 @@ public class Home extends AppCompatActivity {
 
             double numCap = 0.00;
 
-            while (c.moveToNext()) {
-                String cap = c.getString(3);
 
-                if (cap == "A+") {
+            String cap = c.getString(3);
 
-                    numCap = 5.00;
+            if (cap == "A+") {
 
-                } else if (cap == "A") {
+                numCap = 5.00;
 
-                    numCap = 5.00;
+            } else if (cap == "A") {
 
-                } else if (cap == "A-") {
+                numCap = 5.00;
 
-                    numCap = 4.50;
+            } else if (cap == "A-") {
 
-                } else if (cap == "B+") {
+                numCap = 4.50;
 
-                    numCap = 4.00;
+            } else if (cap == "B+") {
 
-                } else if (cap == "B") {
+                numCap = 4.00;
 
-                    numCap = 3.50;
+            } else if (cap == "B") {
 
-                } else if (cap == "B-") {
+                numCap = 3.50;
 
-                    numCap = 3.00;
+            } else if (cap == "B-") {
 
-                } else if (cap == "C+") {
+                numCap = 3.00;
 
-                    numCap = 2.50;
+            } else if (cap == "C+") {
 
-                } else if (cap == "C") {
+                numCap = 2.50;
 
-                    numCap = 2.00;
+            } else if (cap == "C") {
 
-                } else if (cap == "D+") {
+                numCap = 2.00;
 
-                    numCap = 1.50;
+            } else if (cap == "D+") {
 
-                } else if (cap == "D") {
+                numCap = 1.50;
 
-                    numCap = 1.00;
+            } else if (cap == "D") {
 
-                } else {
+                numCap = 1.00;
 
-                    numCap = 0.00;
+            } else {
 
-                }
+                numCap = 0.00;
 
             }
+
             return numCap;
 
         }
@@ -230,20 +245,20 @@ public class Home extends AppCompatActivity {
 
             double numMC = 0.00;
 
-            while (c.moveToNext()) {
-                mc = c.getString(3);
 
-                if (mc == "S") {
+            mc = c.getString(3);
 
-                    numMC = 0.00;
+            if (mc == "S") {
 
-                } else if (mc == "U") {
+                numMC = 0.00;
 
-                    numMC = 0.00;
+            } else if (mc == "U") {
 
-                }
+                numMC = 0.00;
 
             }
+
+
             return numMC;
         }
 
