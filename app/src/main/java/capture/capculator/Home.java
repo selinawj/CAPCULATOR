@@ -17,40 +17,33 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import org.w3c.dom.Comment;
+
 import java.util.Map;
 
 public class Home extends AppCompatActivity {
-    final DBAdapter db = new DBAdapter(this);
-    /*loads CAP and displays it*/
-    TextView capView = (TextView) findViewById(R.id.capView);
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
+        TextView capView = (TextView) findViewById(R.id.capView);
 
-        //TODO: NEED TO CALL THE METHODS HERE
-
+        final DBAdapter db = new DBAdapter(this);//this line
         db.openDB();
-
-
         //RETRIEVE
-        Cursor c = db.getAllNames();
-
+        Cursor c = db.getAllNames();//this line
 
         while (c.moveToNext()) {
 
+            String code = c.getString(1);
             String mc = c.getString(3);
             String grade = c.getString(2);
-            double finalGrade = calculatorFinal(grade, mc);
-            capView.setText(Double.toString(finalGrade));
-
+            /*double finalGrade = calculatorFinal(grade, mc);
+            capView.setText(Double.toString(finalGrade));*///SELINA
+            capView.setText(grade);
         }
 
-/*
-        double finalGrade = calculatorFinal(grade, mc);
-        capView.setText(finalGrade);
-*/
 
         final ImageButton bTargetSetting = (ImageButton) findViewById(R.id.bTargetSetting);
 
@@ -129,15 +122,9 @@ public class Home extends AppCompatActivity {
         final TextView tvExamReminder = (TextView) findViewById(R.id.tvExamReminder);
         }
 
-        public double convertGrade(String grade) {
-
-            //RETRIEVE
-            Cursor c = db.getAllNames();
+        public double convertGrade(String cap) {
 
             double numCap = 0.00;
-
-
-            String cap = c.getString(3);
 
             if (cap == "A+") {
 
@@ -190,63 +177,10 @@ public class Home extends AppCompatActivity {
         }
 
 
-/*
-                switch (cap) {
-                    case "A+":
-                        capView.setText("5.00");
-                        break;
-                    case "A":
-                        capView.setText("5.00");
-                        break;
-                    case "A-":
-                        capView.setText("4.50");
-                        break;
-                    case "B+":
-                        capView.setText("4.00");
-                        break;
-                    case "B":
-                        capView.setText("3.50");
-                        break;
-                    case "B-":
-                        capView.setText("3.00");
-                        break;
-                    case "C+":
-                        capView.setText("2.50");
-                        break;
-                    case "C":
-                        capView.setText("2.00");
-                        break;
-                    case "D+":
-                        capView.setText("1.50");
-                        break;
-                    case "D":
-                        capView.setText("1.00");
-                        break;
-                    case "F":
-                        capView.setText("0.00");
-                        break;
-                    case "S":
-                        capView.setText("0.00");
-                        break;
-                    case "U":
-                        capView.setText("0.00");
-                        break;
-                }
-
-            }
-        }
-
-*/
 
         public double convertMC(String mc) {
 
-            //RETRIEVE
-            Cursor c = db.getAllNames();
-
             double numMC = 0.00;
-
-
-            mc = c.getString(3);
 
             if (mc == "S") {
 
@@ -258,54 +192,32 @@ public class Home extends AppCompatActivity {
 
             }
 
-
             return numMC;
         }
 
-/*
-                switch (mc) {
-                    case "S":
-                        capView.setText("0.00");
-                        break;
-                    case "U":
-                        capView.setText("0.00");
-                        break;
-                }
-
-            }
-
-        }
-
-*/
 
         public double calculatorNumerator(String grade, String mc) {
 
-            //RETRIEVE
-            Cursor c = db.getAllNames();
-
             double counter = 0.00;
 
-            while (c.moveToNext()) {
+            /*while (c.moveToNext()) {
 
                 counter = counter + Double.parseDouble(c.getString(2)) * convertGrade(c.getString(3));
 
-            }
+            }*///SELINA
 
             return counter;
         }
 
         public double calculatorDenominator(String grade, String mc) {
 
-            //RETRIEVE
-            Cursor c = db.getAllNames();
-
             double counter = 0.00;
 
-            while (c.moveToNext()) {
+            /*while (c.moveToNext()) {
 
                 counter = counter + convertMC(c.getString(2));
 
-            }
+            }*///SELINA
 
             return counter;
 
@@ -315,12 +227,11 @@ public class Home extends AppCompatActivity {
 
             return calculatorNumerator(grade, mc)/calculatorDenominator(grade, mc);
 
-/*
+            /*
             double finalCAP = calculatorNumerator(grade, mc)/calculatorDenominator(grade, mc);
 
             capView.setText(Double.toString(finalCAP));
-
-*/
+            *///SELINA
 
         }
 
